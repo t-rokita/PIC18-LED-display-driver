@@ -1,0 +1,652 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F27K42 ]
+[d frameptr 16353 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"79 C:\dev\Tomek\uartfun.X\main.c
+[v _delay_start delay_start `(v  1 e 1 0 ]
+[v i2_delay_start delay_start `(v  1 e 1 0 ]
+"84
+[v _delay_restart delay_restart `(v  1 e 1 0 ]
+"89
+[v _delay_is_expired delay_is_expired `(uc  1 e 1 0 ]
+"111
+[v _prints prints `(v  1 e 1 0 ]
+"123
+[v _get_digit get_digit `(uc  1 e 1 0 ]
+"135
+[v _send_request send_request `(v  1 e 1 0 ]
+"140
+[v _send_answer send_answer `(v  1 e 1 0 ]
+"159
+[v _Led_blinking Led_blinking `(v  1 e 1 0 ]
+"168
+[v _readb readb `(uc  1 e 1 0 ]
+"212
+[v _U1RX_ISR U1RX_ISR `IIH(v  1 e 1 0 ]
+"227
+[v _handler_command_a handler_command_a `(v  1 e 1 0 ]
+"233
+[v _handler_command_s handler_command_s `(v  1 e 1 0 ]
+"238
+[v _handler_command_b handler_command_b `(v  1 e 1 0 ]
+"243
+[v _handler_command_d handler_command_d `(v  1 e 1 0 ]
+"283
+[v _main main `(v  1 e 1 0 ]
+"50 C:\dev\Tomek\uartfun.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 C:\dev\Tomek\uartfun.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"65 C:\dev\Tomek\uartfun.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"88
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+"100
+[v _TMR0_ReadTimer TMR0_ReadTimer `(us  1 e 2 0 ]
+[v i2_TMR0_ReadTimer TMR0_ReadTimer `(us  1 e 2 0 ]
+"5 C:\dev\Tomek\uartfun.X\state_machine.c
+[v _state_rx_byte state_rx_byte `(v  1 e 1 0 ]
+"32
+[v _state_reset state_reset `(v  1 e 1 0 ]
+"40
+[v _state_is_frame_ready state_is_frame_ready `(a  1 e 1 0 ]
+[s S396 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+`uc 1 I2C1IE 1 0 :1:1 
+`uc 1 I2C1EIE 1 0 :1:2 
+`uc 1 U1RXIE 1 0 :1:3 
+`uc 1 U1TXIE 1 0 :1:4 
+`uc 1 U1EIE 1 0 :1:5 
+`uc 1 U1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"3668 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC18F-K_DFP/1.3.84/xc8\pic\include\proc\pic18f27k42.h
+[s S405 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S411 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S416 . 1 `S396 1 . 1 0 `S405 1 . 1 0 `S411 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES416  1 e 1 @14739 ]
+[s S755 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+`uc 1 I2C1IF 1 0 :1:1 
+`uc 1 I2C1EIF 1 0 :1:2 
+`uc 1 U1RXIF 1 0 :1:3 
+`uc 1 U1TXIF 1 0 :1:4 
+`uc 1 U1EIF 1 0 :1:5 
+`uc 1 U1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"4314
+[s S764 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S769 . 1 `S755 1 . 1 0 `S764 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES769  1 e 1 @14755 ]
+"4686
+[v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
+"4763
+[v _PMD1 PMD1 `VEuc  1 e 1 @14785 ]
+"4833
+[v _PMD2 PMD2 `VEuc  1 e 1 @14786 ]
+"4878
+[v _PMD3 PMD3 `VEuc  1 e 1 @14787 ]
+"4940
+[v _PMD4 PMD4 `VEuc  1 e 1 @14788 ]
+"4973
+[v _PMD5 PMD5 `VEuc  1 e 1 @14789 ]
+"5018
+[v _PMD6 PMD6 `VEuc  1 e 1 @14790 ]
+"5068
+[v _PMD7 PMD7 `VEuc  1 e 1 @14791 ]
+"5207
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5347
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"5499
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"5550
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"5654
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"7016
+[v _RB2PPS RB2PPS `VEuc  1 e 1 @14858 ]
+"7616
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @14870 ]
+"7716
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"7778
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"7840
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"7902
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @14915 ]
+"7964
+[v _INLVLA INLVLA `VEuc  1 e 1 @14916 ]
+"8212
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+[s S147 . 1 `uc 1 ANSELB0 1 0 :1:0 
+`uc 1 ANSELB1 1 0 :1:1 
+`uc 1 ANSELB2 1 0 :1:2 
+`uc 1 ANSELB3 1 0 :1:3 
+`uc 1 ANSELB4 1 0 :1:4 
+`uc 1 ANSELB5 1 0 :1:5 
+`uc 1 ANSELB6 1 0 :1:6 
+`uc 1 ANSELB7 1 0 :1:7 
+]
+"8229
+[u S156 . 1 `S147 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES156  1 e 1 @14928 ]
+"8274
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"8336
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"8398
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @14931 ]
+"8460
+[v _INLVLB INLVLB `VEuc  1 e 1 @14932 ]
+"8708
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @14938 ]
+"8816
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @14939 ]
+"8924
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+[s S277 . 1 `uc 1 ANSELC0 1 0 :1:0 
+`uc 1 ANSELC1 1 0 :1:1 
+`uc 1 ANSELC2 1 0 :1:2 
+`uc 1 ANSELC3 1 0 :1:3 
+`uc 1 ANSELC4 1 0 :1:4 
+`uc 1 ANSELC5 1 0 :1:5 
+`uc 1 ANSELC6 1 0 :1:6 
+`uc 1 ANSELC7 1 0 :1:7 
+]
+"8941
+[u S286 . 1 `S277 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES286  1 e 1 @14944 ]
+"8986
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"9048
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"9110
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @14947 ]
+"9172
+[v _INLVLC INLVLC `VEuc  1 e 1 @14948 ]
+"9420
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @14954 ]
+"9528
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @14955 ]
+"9636
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"9657
+[v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"10501
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @15077 ]
+"10521
+[v _U1CTSPPS U1CTSPPS `VEuc  1 e 1 @15078 ]
+"24936
+[v _U1RXB U1RXB `VEuc  1 e 1 @15848 ]
+"24994
+[v _U1TXB U1TXB `VEuc  1 e 1 @15850 ]
+[s S168 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+]
+"25224
+[s S172 . 1 `uc 1 U1MODE 1 0 :4:0 
+`uc 1 U1RXEN 1 0 :1:4 
+`uc 1 U1TXEN 1 0 :1:5 
+`uc 1 U1ABDEN 1 0 :1:6 
+`uc 1 U1BRGS 1 0 :1:7 
+]
+[s S178 . 1 `uc 1 U1MODE0 1 0 :1:0 
+`uc 1 U1MODE1 1 0 :1:1 
+`uc 1 U1MODE2 1 0 :1:2 
+]
+[s S182 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+[u S188 . 1 `S168 1 . 1 0 `S172 1 . 1 0 `S178 1 . 1 0 `S182 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES188  1 e 1 @15858 ]
+[s S360 . 1 `uc 1 SENDB 1 0 :1:0 
+`uc 1 BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RXBIMD 1 0 :1:3 
+`uc 1 WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 ON 1 0 :1:7 
+]
+"25334
+[s S368 . 1 `uc 1 U1SENDB 1 0 :1:0 
+`uc 1 U1BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 U1RXBIMD 1 0 :1:3 
+`uc 1 U1WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 U1ON 1 0 :1:7 
+]
+[u S376 . 1 `S360 1 . 1 0 `S368 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES376  1 e 1 @15859 ]
+[s S302 . 1 `uc 1 FLO 1 0 :2:0 
+`uc 1 TXPOL 1 0 :1:2 
+`uc 1 C0EN 1 0 :1:3 
+`uc 1 STP 1 0 :2:4 
+`uc 1 RXPOL 1 0 :1:6 
+`uc 1 RUNOVF 1 0 :1:7 
+]
+"25426
+[s S309 . 1 `uc 1 FLO0 1 0 :1:0 
+`uc 1 FLO1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 STP0 1 0 :1:4 
+`uc 1 STP1 1 0 :1:5 
+]
+[s S315 . 1 `uc 1 U1FLO 1 0 :2:0 
+`uc 1 U1TXPOL 1 0 :1:2 
+`uc 1 U1C0EN 1 0 :1:3 
+`uc 1 U1STP 1 0 :2:4 
+`uc 1 U1RXPOL 1 0 :1:6 
+`uc 1 U1RUNOVF 1 0 :1:7 
+]
+[s S322 . 1 `uc 1 U1FLO0 1 0 :1:0 
+`uc 1 U1FLO1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 U1STP0 1 0 :1:4 
+`uc 1 U1STP1 1 0 :1:5 
+]
+[u S328 . 1 `S302 1 . 1 0 `S309 1 . 1 0 `S315 1 . 1 0 `S322 1 . 1 0 ]
+[v _U1CON2bits U1CON2bits `VES328  1 e 1 @15860 ]
+"25538
+[v _U1BRGL U1BRGL `VEuc  1 e 1 @15861 ]
+"25558
+[v _U1BRGH U1BRGH `VEuc  1 e 1 @15862 ]
+"43272
+[v _TMR0L TMR0L `VEuc  1 e 1 @16310 ]
+"43410
+[v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
+"43664
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
+[s S788 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"43692
+[s S794 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"43692
+[s S800 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+"43692
+[u S806 . 1 `S788 1 . 1 0 `S794 1 . 1 0 `S800 1 . 1 0 ]
+"43692
+"43692
+[v _T0CON0bits T0CON0bits `VES806  1 e 1 @16312 ]
+"43762
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
+"43904
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+"44016
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+[s S68 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"44043
+[s S77 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+"44043
+[u S86 . 1 `S68 1 . 1 0 `S77 1 . 1 0 ]
+"44043
+"44043
+[v _LATBbits LATBbits `VES86  1 e 1 @16315 ]
+"44128
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+[s S216 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"44155
+[s S225 . 1 `uc 1 LC0 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+`uc 1 LC2 1 0 :1:2 
+`uc 1 LC3 1 0 :1:3 
+`uc 1 LC4 1 0 :1:4 
+`uc 1 LC5 1 0 :1:5 
+`uc 1 LC6 1 0 :1:6 
+`uc 1 LC7 1 0 :1:7 
+]
+"44155
+[u S234 . 1 `S216 1 . 1 0 `S225 1 . 1 0 ]
+"44155
+"44155
+[v _LATCbits LATCbits `VES234  1 e 1 @16316 ]
+"44240
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"44302
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+[s S126 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"44319
+[u S135 . 1 `S126 1 . 1 0 ]
+"44319
+"44319
+[v _TRISBbits TRISBbits `VES135  1 e 1 @16323 ]
+"44364
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+[s S256 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"44381
+[u S265 . 1 `S256 1 . 1 0 ]
+"44381
+"44381
+[v _TRISCbits TRISCbits `VES265  1 e 1 @16324 ]
+[s S445 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"44726
+[s S453 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"44726
+[u S456 . 1 `S445 1 . 1 0 `S453 1 . 1 0 ]
+"44726
+"44726
+[v _INTCON0bits INTCON0bits `VES456  1 e 1 @16338 ]
+"55727
+[v _U1RXIF U1RXIF `VEb  1 e 0 @118043 ]
+"55766
+[v _U1TXIF U1TXIF `VEb  1 e 0 @118044 ]
+[s S52 . 1 `uc 1 FRAME_READY 1 0 :1:0 
+`uc 1 . 1 0 :7:1 
+]
+"76 C:\dev\Tomek\uartfun.X\main.c
+[s S55 state 10 `uc 1 ile 1 0 `[8]uc 1 buf 8 1 `S52 1 . 1 9 ]
+[v _rx_state rx_state `VES55  1 e 10 0 ]
+[s S59 . 4 `us 1 start 2 0 `us 1 delay 2 2 ]
+"77
+[v _delay delay `VES59  1 e 4 0 ]
+"58 C:\dev\Tomek\uartfun.X\mcc_generated_files/tmr0.c
+[v _timer0ReloadVal16bit timer0ReloadVal16bit `VEus  1 e 2 0 ]
+"283 C:\dev\Tomek\uartfun.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+[s S59 . 4 `us 1 start 2 0 `us 1 delay 2 2 ]
+"314
+[v main@timeout timeout `S59  1 a 4 2 ]
+"344
+} 0
+"32 C:\dev\Tomek\uartfun.X\state_machine.c
+[v _state_reset state_reset `(v  1 e 1 0 ]
+{
+"36
+[v state_reset@i i `i  1 a 2 17 ]
+[s S52 . 1 `uc 1 FRAME_READY 1 0 :1:0 
+`uc 1 . 1 0 :7:1 
+]
+"32
+[s S55 state 10 `uc 1 ile 1 0 `[8]uc 1 buf 8 1 `S52 1 . 1 9 ]
+[v state_reset@st st `*.39VES55  1 p 2 13 ]
+"39
+} 0
+"40
+[v _state_is_frame_ready state_is_frame_ready `(a  1 e 1 0 ]
+{
+[s S52 . 1 `uc 1 FRAME_READY 1 0 :1:0 
+`uc 1 . 1 0 :7:1 
+]
+[s S55 state 10 `uc 1 ile 1 0 `[8]uc 1 buf 8 1 `S52 1 . 1 9 ]
+[v state_is_frame_ready@st st `*.39VES55  1 p 2 13 ]
+} 0
+"135 C:\dev\Tomek\uartfun.X\main.c
+[v _send_request send_request `(v  1 e 1 0 ]
+{
+"136
+[v send_request@cmd cmd `[4]uc  1 a 4 35 ]
+[s S52 . 1 `uc 1 FRAME_READY 1 0 :1:0 
+`uc 1 . 1 0 :7:1 
+]
+"135
+[s S55 state 10 `uc 1 ile 1 0 `[8]uc 1 buf 8 1 `S52 1 . 1 9 ]
+[v send_request@st st `*.39VES55  1 p 2 33 ]
+[v send_request@F15375 F15375 `[4]uc  1 s 4 F15375 ]
+"138
+} 0
+"140
+[v _send_answer send_answer `(v  1 e 1 0 ]
+{
+"147
+[v send_answer@cmd cmd `[9]uc  1 a 9 36 ]
+"141
+[v send_answer@num num `us  1 a 2 45 ]
+[s S52 . 1 `uc 1 FRAME_READY 1 0 :1:0 
+`uc 1 . 1 0 :7:1 
+]
+"140
+[s S55 state 10 `uc 1 ile 1 0 `[8]uc 1 buf 8 1 `S52 1 . 1 9 ]
+[v send_answer@st st `*.39VES55  1 p 2 33 ]
+"157
+} 0
+"111
+[v _prints prints `(v  1 e 1 0 ]
+{
+[v prints@str str `*.34Cuc  1 p 2 31 ]
+"121
+} 0
+"89
+[v _delay_is_expired delay_is_expired `(uc  1 e 1 0 ]
+{
+"91
+[v delay_is_expired@now now `us  1 a 2 29 ]
+[s S59 . 4 `us 1 start 2 0 `us 1 delay 2 2 ]
+"89
+[v delay_is_expired@delay delay `*.39S59  1 p 2 21 ]
+"93
+} 0
+"123
+[v _get_digit get_digit `(uc  1 e 1 0 ]
+{
+[v get_digit@ch ch `uc  1 a 1 wreg ]
+"125
+[v get_digit@digit digit `uc  1 a 1 13 ]
+"123
+[v get_digit@ch ch `uc  1 a 1 wreg ]
+"125
+[v get_digit@ch ch `uc  1 a 1 14 ]
+"133
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 24 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 20 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 22 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 18 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 17 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 13 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 15 ]
+"30
+} 0
+"79 C:\dev\Tomek\uartfun.X\main.c
+[v _delay_start delay_start `(v  1 e 1 0 ]
+{
+[s S59 . 4 `us 1 start 2 0 `us 1 delay 2 2 ]
+[v delay_start@delay delay `*.39S59  1 p 2 21 ]
+[v delay_start@value value `us  1 p 2 23 ]
+"82
+} 0
+"100 C:\dev\Tomek\uartfun.X\mcc_generated_files/tmr0.c
+[v _TMR0_ReadTimer TMR0_ReadTimer `(us  1 e 2 0 ]
+{
+"102
+[v TMR0_ReadTimer@readVal readVal `us  1 a 2 17 ]
+"104
+[v TMR0_ReadTimer@readValHigh readValHigh `uc  1 a 1 20 ]
+"103
+[v TMR0_ReadTimer@readValLow readValLow `uc  1 a 1 19 ]
+"111
+} 0
+"88
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+{
+"92
+} 0
+"50 C:\dev\Tomek\uartfun.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"65 C:\dev\Tomek\uartfun.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"86
+} 0
+"72 C:\dev\Tomek\uartfun.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"90
+} 0
+"55 C:\dev\Tomek\uartfun.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"122
+} 0
+"58 C:\dev\Tomek\uartfun.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"212 C:\dev\Tomek\uartfun.X\main.c
+[v _U1RX_ISR U1RX_ISR `IIH(v  1 e 1 0 ]
+{
+"215
+[v U1RX_ISR@znak znak `uc  1 a 1 12 ]
+"225
+} 0
+"79
+[v i2_delay_start delay_start `(v  1 e 1 0 ]
+{
+[s S59 . 4 `us 1 start 2 0 `us 1 delay 2 2 ]
+[v i2delay_start@delay delay `*.39S59  1 p 2 8 ]
+[v i2delay_start@value value `us  1 p 2 10 ]
+"82
+} 0
+"100 C:\dev\Tomek\uartfun.X\mcc_generated_files/tmr0.c
+[v i2_TMR0_ReadTimer TMR0_ReadTimer `(us  1 e 2 0 ]
+{
+"102
+[v i2TMR0_ReadTimer@readVal readVal `us  1 a 2 4 ]
+"104
+[v i2TMR0_ReadTimer@readValHigh readValHigh `uc  1 a 1 7 ]
+"103
+[v i2TMR0_ReadTimer@readValLow readValLow `uc  1 a 1 6 ]
+"111
+} 0
+"5 C:\dev\Tomek\uartfun.X\state_machine.c
+[v _state_rx_byte state_rx_byte `(v  1 e 1 0 ]
+{
+[s S52 . 1 `uc 1 FRAME_READY 1 0 :1:0 
+`uc 1 . 1 0 :7:1 
+]
+[s S55 state 10 `uc 1 ile 1 0 `[8]uc 1 buf 8 1 `S52 1 . 1 9 ]
+[v state_rx_byte@st st `*.39VES55  1 p 2 0 ]
+[v state_rx_byte@ch ch `uc  1 p 1 2 ]
+"30
+} 0

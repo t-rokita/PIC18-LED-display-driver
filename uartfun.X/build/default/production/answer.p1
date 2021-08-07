@@ -1,0 +1,68 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F9 `(v ~T0 @X0 0 tf2`uc`uc ]
+"15 ./answer.h
+[; ;./answer.h: 15: struct cmd_handler {
+[s S1 `uc 1 `*F9 1 ]
+[n S1 cmd_handler cmd handler ]
+"19 ./answer.h
+[; ;./answer.h: 19: }Handler;
+[v _Handler `S1 ~T0 @X0 1 e ]
+"8 answer.c
+[; ;answer.c: 8: _Bool answer_call_handler(const struct cmd_handler* handlers, char cmd, char arg)
+[v _answer_call_handler `(a ~T0 @X0 1 ef3`*CS1`uc`uc ]
+"9
+[; ;answer.c: 9: {
+{
+[e :U _answer_call_handler ]
+"8
+[; ;answer.c: 8: _Bool answer_call_handler(const struct cmd_handler* handlers, char cmd, char arg)
+[v _handlers `*CS1 ~T0 @X0 1 r1 ]
+[v _cmd `uc ~T0 @X0 1 r2 ]
+[v _arg `uc ~T0 @X0 1 r3 ]
+"9
+[; ;answer.c: 9: {
+[f ]
+"10
+[; ;answer.c: 10:     _Bool found = 0;
+[v _found `a ~T0 @X0 1 a ]
+[e = _found -> -> 0 `i `a ]
+"11
+[; ;answer.c: 11:     while(handlers->cmd)
+[e $U 5  ]
+[e :U 6 ]
+"12
+[; ;answer.c: 12:     {
+{
+"13
+[; ;answer.c: 13:         if(handlers->cmd == cmd) {
+[e $ ! == -> . *U _handlers 0 `i -> _cmd `i 8  ]
+{
+"14
+[; ;answer.c: 14:             (*handlers->handler)(cmd, arg);
+[e ( *U . *U _handlers 1 (2 , _cmd _arg ]
+"15
+[; ;answer.c: 15:             found = 1;
+[e = _found -> -> 1 `i `a ]
+"16
+[; ;answer.c: 16:         }
+}
+[e :U 8 ]
+"17
+[; ;answer.c: 17:         handlers++;
+[e ++ _handlers * -> -> 1 `i `x -> -> # *U _handlers `i `x ]
+"18
+[; ;answer.c: 18:     }
+}
+[e :U 5 ]
+"11
+[; ;answer.c: 11:     while(handlers->cmd)
+[e $ != -> . *U _handlers 0 `i -> 0 `i 6  ]
+[e :U 7 ]
+"20
+[; ;answer.c: 20:     return found;
+[e ) _found ]
+[e $UE 4  ]
+"21
+[; ;answer.c: 21: }
+[e :UE 4 ]
+}
